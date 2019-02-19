@@ -98,32 +98,5 @@ app.layout = html.Div([
     )
 ], style={'width': '100%'})
 
-#app.layout = html.Div(children=[
-#    html.Div(children='''
-#        Enter the value you want to sort by:
-#    '''),
-#    dcc.Input(id='input', value='lift', type='text'),
-#    html.Div(id='output-graph'),
-#])
-
-#@app.callback(
-#    Output(component_id='output-graph', component_property='children'),
-#    [Input(component_id='input', component_property='value')]
-#)
-
-#def update_value(input_data):
-#    df = resultsconfidence_support
-
-#    html.H1("Apriori Results"),
-#    return dcc.Graph(
-#        id="graph_one",
-#        figure = {
-#            "data" : [{"x": df.index.sort_values(by=[input_data]), "y": df.lift, "type" : "bar", "name" : "lift" }],
-#            'layout': {
-#                'title': input_data
-#                }
-#        })
-
-
 if __name__ == "__main__":
     app.run_server(debug=True)
