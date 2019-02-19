@@ -29,7 +29,7 @@ def update_value(input_data):
     start = datetime.datetime(start_year, start_month, start_day)
     end = datetime.datetime.now()
     df = web.DataReader(input_data, 'fred', start, end)
-    print(df.head())
+    #print(df.head())
 
     return dcc.Graph(
         id="output-graph",
