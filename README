@@ -1,5 +1,8 @@
-The apriori_dash.py requires the 2 databases to work.
+The apriori_dash.py requires the 2 SAS databases to work.
 
-The dashboard_FRED.py doesn't require any database since it gets the data from fred st louis website. 
 
-These both make use of DASH to create an interractive dashboard.
+The dashboard_FRED.py doesn't require any database since it gets the data from fred st louis API.
+
+
+
+These both make use of "DASH" to create an interractive dashboard.
